@@ -4,7 +4,7 @@
 -->
 
 
-# ![](/images/icons/help.gif)Using Bioconductor with Microarray Analysis
+# Using Bioconductor with Microarray Analysis
 
 
 Bioconductor has advanced facilities for analysis of microarray
