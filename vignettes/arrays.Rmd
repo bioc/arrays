@@ -98,7 +98,8 @@ Follow [installation instructions](/install/) to start using these
 packages.  You can install  `affy` and `limma` as follows:
 
 ```{r eval=FALSE}
-source("http://bioconductor.org/biocLite.R")
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
 biocLite(c("affy", "limma"))
 ```
 
@@ -106,7 +107,8 @@ To install additional packages, such as the annotations associated
 with the Affymetrix Human Genome U95A 2.0, use
 
 ```{r eval=FALSE}
-source("http://bioconductor.org/biocLite.R")
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
 biocLite("hgu95av2.db")
 ```
 
