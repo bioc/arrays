@@ -6,5 +6,5 @@ Description: Using Bioconductor for Microarray Analysis workflow
 Depends:
     R (>= 3.0.0)
 License: Artistic-2.0
-Suggests: affy, limma, hgfocuscdf, knitr
+Suggests: affy, limma, hgfocuscdf, knitr, rmarkdown
 VignetteBuilder: knitr
