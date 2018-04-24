@@ -1,11 +1,11 @@
 Package: arrays
 Title: Using Bioconductor for Microarray Analysis
-Version: 0.3.1
+Version: 0.3.2
 Authors@R: person(role=c("aut", "cre"), "Bioconductor Package", "Maintainer", email = "maintainer@bioconductor.org")
 Description: Using Bioconductor for Microarray Analysis workflow
 Depends:
     R (>= 3.0.0)
 License: Artistic-2.0
-Suggests: affy, limma, hgfocuscdf, knitr, rmarkdown
+Suggests: affy, limma, hgfocuscdf, knitr, rmarkdown, BiocStyle
 VignetteBuilder: knitr
 biocViews: Workflow, BasicWorkflow

@@ -1,28 +1,47 @@
 ---
 title: Using Bioconductor for Microarray Analysis
 output:
-  html_document:
-    toc: true
+  BiocStyle::html_document
+date: 24 April 2018
 vignette: >
   %\VignetteIndexEntry{Using Bioconductor for Microarray Analysis}
   %\VignetteEngine{knitr::rmarkdown}
+author:
+- name: Bioconductor Maintainer
+  affiliation: Roswell Park Cancer Institute, Elm and Carlton St, Buffalo, NY 14263
+  email: maintainer@bioconductor.org
+abstract: >
+
+  Bioconductor has advanced facilities for analysis of microarray
+  platforms including Affymetrix, Illumina, Nimblegen, Agilent, and
+  other one- and two-color technologies.
+
+  Bioconductor includes extensive support for analysis of expression
+  arrays, and well-developed support for exon, copy number, SNP,
+  methylation, and other assays.
+
+  Major workflows in Bioconductor include pre-processing, quality
+  assessment, differential expression, clustering and classification,
+  gene set enrichment analysis, and genetical genomics.
+
+  Bioconductor offers extensive interfaces to community resources,
+  including GEO, ArrayExpress, Biomart, genome browsers, GO, KEGG, and
+  diverse annotation sources.
 ---
+# Version Info
+```{r, echo=FALSE, results="hide", warning=FALSE}
+suppressPackageStartupMessages({
+library('arrays')
+})
+```
+<p>
+**R version**: `r R.version.string`
+<br />
+**Bioconductor version**: `r BiocInstaller::biocVersion()`
+<br />
+**Package version**: `r packageVersion("arrays")`
+</p>
 
-Bioconductor has advanced facilities for analysis of microarray
-platforms including Affymetrix, Illumina, Nimblegen, Agilent, and
-other one- and two-color technologies.
-
-Bioconductor includes extensive support for analysis of expression
-arrays, and well-developed support for exon, copy number, SNP,
-methylation, and other assays.
-
-Major workflows in Bioconductor include pre-processing, quality
-assessment, differential expression, clustering and classification,
-gene set enrichment analysis, and genetical genomics.
-
-Bioconductor offers extensive interfaces to community resources,
-including GEO, ArrayExpress, Biomart, genome browsers, GO, KEGG, and
-diverse annotation sources.
 
 # Sample Workflow
 
