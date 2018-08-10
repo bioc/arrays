@@ -37,7 +37,7 @@ library('arrays')
 <p>
 **R version**: `r R.version.string`
 <br />
-**Bioconductor version**: `r BiocInstaller::biocVersion()`
+**Bioconductor version**: `r BiocManager::version()`
 <br />
 **Package version**: `r packageVersion("arrays")`
 </p>
@@ -113,18 +113,16 @@ Follow [installation instructions](/install/) to start using these
 packages.  You can install  `affy` and `limma` as follows:
 
 ```{r eval=FALSE}
-## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite(c("affy", "limma"))
+if (!"BiocManager" %in% rownames(installed.packages()))
+     install.packages("BiocManager")
+BiocManager::install(c("affy", "limma"), dependencies=TRUE)
 ```
 
 To install additional packages, such as the annotations associated
 with the Affymetrix Human Genome U95A 2.0, use
 
 ```{r eval=FALSE}
-## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite("hgu95av2.db")
+BiocManager::install("hgu95av2.db", dependencies=TRUE)
 ```
 
 Package installation is required only once per R installation. View a
@@ -183,7 +181,7 @@ and in Bioconductor [Books and monographs](/help/publications/).
 [affyPLM](/packages/release/bioc/html/affyPLM.html)
 
 * Require cdf package, probe package and annotation package
-* All these packages are available from Bioconductor via `biocLite()`
+* All these packages are available from Bioconductor via `BiocManager::install()`
 
 [xps](/packages/release/bioc/html/xps.html)
 
@@ -197,7 +195,7 @@ and in Bioconductor [Books and monographs](/help/publications/).
 * Requires a pdInfoPackage built using
   [pdInfoBuilder](/packages/release/bioc/html/pdInfoBuilder.html)
 * This package collates cdf, probe, annotation data together
-* These packages are available from Bioconductor via `biocLite()`
+* These packages are available from Bioconductor via `BiocManager::install()`
 * Most cases will require a 64-bit computer running Linux and &gt;= 8Gb RAM
 
 [exonmap](/packages/release/bioc/html/exonmap.html)
@@ -220,7 +218,7 @@ and in Bioconductor [Books and monographs](/help/publications/).
 * Requires a pdInfoPackage built using
   [pdInfoBuilder](/packages/release/bioc/html/pdInfoBuilder.html)
 * This package collates cdf, probe, annotation data together
-* These packages are available from Bioconductor via `biocLite()`
+* These packages are available from Bioconductor via `BiocManager::install()`
 
 [xps](/packages/release/bioc/html/xps.html)
 
@@ -234,7 +232,7 @@ and in Bioconductor [Books and monographs](/help/publications/).
 * Requires a pdInfoPackage built using
   [pdInfoBuilder](/packages/release/bioc/html/pdInfoBuilder.html)
 * This package collates cdf, probe, annotation and HapMap data
-* These packages are available from Bioconductor via `biocLite()`
+* These packages are available from Bioconductor via `BiocManager::install()`
 * Not yet capable of processing CNV regions in SNP5.0 and SNP6.0 </ul>
 
 ## Affymetrix Tiling Arrays ##
