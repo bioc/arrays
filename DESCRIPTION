@@ -1,6 +1,6 @@
 Package: arrays
 Title: Using Bioconductor for Microarray Analysis
-Version: 1.15.0
+Version: 1.16.0
 Authors@R: person(role=c("aut", "cre"), "Bioconductor Package", "Maintainer", email = "maintainer@bioconductor.org")
 Description: Using Bioconductor for Microarray Analysis workflow
 Depends:
